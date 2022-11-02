@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/css/bootstrap.min.css"
+      integrity="sha512-siwe/oXMhSjGCwLn+scraPOWrJxHlUgMBMZXdPe2Tnk3I0x3ESCoLz7WZ5NTH6SZrywMY+PB1cjyqJ5jAluCOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+      integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <title>Practice</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form action="#" id="form" class="form">
+        <h2 class="title">New event</h2>
+        <label for="title">
+          <input type="text" placeholder="Type here.." id="title" />
+        </label>
+        <label for="event">
+          <input type="datetime-local" id="event" />
+        </label>
+        <button type="submit" value="add countdown">
+          <i class="fas fa-plus"></i>
+        </button>
+      </form>
+    </div>
+    <div class="event-container hidden">
+      <div class="event">
+        <button class="event__btn">
+          <i class="fas fa-trash"></i>
+        </button>
+        <h2 class="event__title"></h2>
+        <div class="event__countdown">
+          <div class="event__item">
+            <p class="event__item--title" id="day__title"></p>
+            <p id="day">Days</p>
+          </div>
+          <div class="event__item">
+            <p class="event__item--title" id="hour__title"></p>
+            <p id="hour">Hours</p>
+          </div>
+          <div class="event__item">
+            <p class="event__item--title" id="minute__title"></p>
+            <p id="minute">Minutes</p>
+          </div>
+          <div class="event__item">
+            <p class="event__item--title" id="second__title"></p>
+            <p id="second">Seconds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
